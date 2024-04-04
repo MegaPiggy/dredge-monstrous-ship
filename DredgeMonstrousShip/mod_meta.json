@@ -1,0 +1,8 @@
+{
+	"Name": "Dredge Monstrous Ship",
+	"ModGUID": "xen.DredgeMonstrousShip",
+	"Version": "0.0.2",
+	"ModAssembly": "DredgeMonstrousShip.dll",
+	"MinWinchVersion": "0.2.3",
+	"Entrypoint": "DredgeMonstrousShip.Loader/Initialize"
+}

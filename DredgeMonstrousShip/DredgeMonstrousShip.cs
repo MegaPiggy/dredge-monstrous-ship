@@ -35,6 +35,7 @@ public class DredgeMonstrousShip : MonoBehaviour
             {
                 collider.enabled = false;
             }
+            monsterBody.Find("GaleCliffMonster").GetComponent<Animator>().SetBool("detectsPlayer", true); // Open eye
 
             // Remove boat graphics
             __instance.transform.Find("Boat1").gameObject.SetActive(false);

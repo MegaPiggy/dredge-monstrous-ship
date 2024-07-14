@@ -27,9 +27,10 @@ public class DredgeMonstrousShip : MonoBehaviour
             var monsterData = GameManager.Instance.MonsterManager.GaleCliffsMonsterManager.monsterData;
             var monsterGraphics = monsterData.prefab.transform.Find("PivotTarget");
             var monsterBody = GameObject.Instantiate(monsterGraphics);
-            monsterBody.transform.parent = __instance.transform;
-            monsterBody.transform.localPosition = Vector3.forward;
-            monsterBody.transform.localRotation = Quaternion.identity;
+            monsterBody.name = "MonsterPivotTarget";
+            monsterBody.parent = __instance.transform;
+            monsterBody.localPosition = Vector3.forward;
+            monsterBody.localRotation = Quaternion.identity;
             foreach (var collider in monsterBody.GetComponentsInChildren<Collider>())
             {
                 collider.enabled = false;
